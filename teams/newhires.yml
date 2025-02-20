@@ -27,6 +27,7 @@ controls:
     - path: ../lib/set-timezone.script.sh
     - path: ../lib/collect-fleetd-logs.sh
     - path: ../lib/set-wallpaper.ps1
+    - path: ../lib/enable-gatekeeper.sh
 team_settings:
   secrets:
     - secret: "$FLEET_NEW_HIRES_ENROLL_SECRET"

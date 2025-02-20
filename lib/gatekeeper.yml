@@ -5,4 +5,4 @@
   resolution: Please enable Gatekeeper, or talk to your IT team to enable it.
   platform: darwin
   run_script:
-    path: ../lib/enable-gatekeeper.sh
+    - path: ../lib/enable-gatekeeper.sh
