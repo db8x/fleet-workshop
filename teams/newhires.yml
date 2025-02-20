@@ -15,9 +15,18 @@ queries:
 agent_options:
   path: ../lib/agent-options.yml
 controls:
+  macos_settings:
+    custom_settings: ../lib/disable-bluetooth.mobileconfig
+  macos_updates:
+    deadline: "2025-03-01"
+    minimum_version: "15.3.1"
+  windows_settings:
+    custom_settings:
+      - path: ../lib/password.xml
   scripts:
     - path: ../lib/remove-zoom-artifacts.script.sh
     - path: ../lib/set-timezone.script.sh
+    - path: ../lib/collect-fleetd-logs.sh
 team_settings:
   secrets:
     - secret: "$FLEET_NEW_HIRES_ENROLL_SECRET"
