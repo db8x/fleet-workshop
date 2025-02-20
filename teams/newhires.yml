@@ -16,7 +16,8 @@ agent_options:
   path: ../lib/agent-options.yml
 controls:
   macos_settings:
-    custom_settings: ../lib/disable-bluetooth.mobileconfig
+    custom_settings:
+    - path: ../lib/disable-bluetooth.mobileconfig
   macos_updates:
     deadline: "2025-03-01"
     minimum_version: "15.3.1"
