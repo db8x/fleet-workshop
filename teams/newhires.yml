@@ -21,13 +21,11 @@ controls:
   macos_updates:
     deadline: "2025-03-01"
     minimum_version: "15.3.1"
-  windows_settings:
-    custom_settings:
-      - path: ../lib/password.xml
   scripts:
     - path: ../lib/remove-zoom-artifacts.script.sh
     - path: ../lib/set-timezone.script.sh
     - path: ../lib/collect-fleetd-logs.sh
+    - path: ../lib/set-wallpaper.ps1
 team_settings:
   secrets:
     - secret: "$FLEET_NEW_HIRES_ENROLL_SECRET"
